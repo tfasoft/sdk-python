@@ -1,1 +1,1 @@
-from tfa_python_sdk.tfa_python_sdk import TFA
+from .tfa_python_sdk import TFA
