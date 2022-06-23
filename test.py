@@ -1,7 +1,14 @@
-from tfa_python_sdk import tfa_python_sdk
+from tfa_python_sdk import TFA
 
-auth = tfa_python_sdk.TFA('test')
+auth = TFA('access_token')
 
-result = auth.authUser('again')
+result = auth.authUser('user_token')
 
-print(result)
+statCode = result.error
+
+if (statCode == 800):
+    print('Authenticated.')
+elif (statCode == 820):
+    print('User token is wrong.')
+elif (statCode == 290):
+    print('Admin token is wrong.')
