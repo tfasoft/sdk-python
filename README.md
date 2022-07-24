@@ -1,6 +1,6 @@
 # Telegram Factor Authentication - Python SDK
 
-[Python SDK document is in docs.telefa.com](https://docs.amirhossein.info/sdks/python)
+[Python SDK document is in docs.tfasoft.com](https://docs.amirhossein.info/sdks/python)
 
 If you are using **TFA** as your authentication service in your python applications, you can use our library.
 
