@@ -5,14 +5,14 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name='tfa-python-sdk',
-    version='1.0.0',
+    version='1.1.0',
     author='Amirhossein Mohammadi',
     license='MIT',
     author_email="amirhosseinmohammadi1380@yahoo.com",
     description="Telegram Factor Authentication python library",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/tele-fa/tfa-python-sdk",
+    url="https://github.com/tfasoft/sdk-python",
     packages=find_packages(),
     install_requires=find_packages()
 )
