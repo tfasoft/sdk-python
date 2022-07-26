@@ -49,14 +49,14 @@ You are done it this step. Let's move forward and check status codes and check u
 When you get the result, you can check codes and see what are them. Here is a quick review:
 
 ```python
-resultObject = result.json()
-statCode = result.status_code
+statCode = result.status
+data = result.data
 
 if (statCode == 200):
     print('Authenticated.')
-    user = resultObject['user']
+    user = data['user']
 else:
-    print(resultObject['message'])
+    print(data['message'])
 ```
 
 Now if your code is 200, it means that you know have user. If it is else, it means your code is 401. For object that returns to you, chesk object below.
@@ -69,7 +69,6 @@ Here let's know about them in deep.
 
 ```json
 {
-    "error": 800,
     "user": {
         "_id": "document id",
         "uid": "telegram user id",
