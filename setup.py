@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name='tfa-python-sdk',
-    version='1.1.0',
+    version='1.2.0',
     author='Amirhossein Mohammadi',
     license='MIT',
     author_email="amirhosseinmohammadi1380@yahoo.com",
