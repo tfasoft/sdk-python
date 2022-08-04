@@ -49,8 +49,8 @@ You are done it this step. Let's move forward and check status codes and check u
 When you get the result, you can check codes and see what are them. Here is a quick review:
 
 ```python
-statCode = result.status
-data = result.data
+statCode = result['status']
+data = result['data']
 
 if (statCode == 200):
     print('Authenticated.')
