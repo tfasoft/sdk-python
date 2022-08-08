@@ -3,8 +3,8 @@ import requests as req
 class TFA:
     def __init__(self, access_token) -> None:
         self.access_token = access_token
-        self.testUrl = "http://localhost:8000"
-        self.baseUrl = "https://tele-fa-api.herokuapp.com"
+        self.testUrl = "http://localhost:9000/api/auth"
+        self.baseUrl = "https://tfasoft-api.herokuapp.com/api/auth"
 
     def authUser(self, user_token):
         urlData = {
@@ -12,7 +12,7 @@ class TFA:
             "user_token": user_token,
         }
 
-        response = req.post(f'{self.baseUrl}/api/auth/access', json = urlData)
+        response = req.post(f'{self.baseUrl}/auth/access', json = urlData)
 
         data = {
             "status": response.status_code,
