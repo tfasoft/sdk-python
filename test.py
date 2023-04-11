@@ -1,14 +1,13 @@
 from tfa_python_sdk import TFA
 
-auth = TFA('access_token')
+auth = TFA('rglscfrrdqdjvalsyvwzelrab')
 
-result = auth.authUser('user_token')
+result = auth.authUser("pjdbdzynbcqalcdnmoinsutdb")
 
 statCode = result['status']
 data = result['data']
 
 if (statCode == 200):
-    print('Authenticated.')
-    user = data['user']
+    print({"user": data})
 else:
-    print(data['message'])
+    print({"message": data['message']})

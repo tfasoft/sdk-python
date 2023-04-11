@@ -1,10 +1,14 @@
 import requests as req
 
+session = req.Session()
+session.trust_env = False
+
+baseUrl = "http://localhost:25000/api"
+
+
 class TFA:
     def __init__(self, access_token) -> None:
         self.access_token = access_token
-        self.testUrl = "http://localhost:9000/api/auth"
-        self.baseUrl = "https://tfasoft-api.herokuapp.com/api/auth"
 
     def authUser(self, user_token):
         urlData = {
@@ -12,7 +16,7 @@ class TFA:
             "user_token": user_token,
         }
 
-        response = req.post(f'{self.baseUrl}/auth/access', json = urlData)
+        response = session.post(f'{baseUrl}/access', json=urlData)
 
         data = {
             "status": response.status_code,
