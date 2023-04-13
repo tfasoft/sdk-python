@@ -1,9 +1,6 @@
 import requests as req
 
-session = req.Session()
-session.trust_env = False
-
-baseUrl = "http://localhost:25000/api"
+baseUrl = "https://api.tfasoft.com/api"
 
 
 class TFA:
@@ -16,7 +13,7 @@ class TFA:
             "user_token": user_token,
         }
 
-        response = session.post(f'{baseUrl}/access', json=urlData)
+        response = req.post(f'{baseUrl}/access', json=urlData)
 
         data = {
             "status": response.status_code,
