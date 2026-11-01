@@ -1,5 +1,16 @@
 # Telegram Factor Authentication - Python SDK
 
+> [!IMPORTANT]
+> **Repository Migration**
+>
+> This repository has moved to GitLab.
+>
+> All active development and maintenance now take place at:
+>
+> **[View the repository on GitLab](https://gitlab.com/tfasoft/sdk/sdk-python)**
+>
+> This GitHub repository is retained for historical reference. Please use the GitLab repository for the latest updates, issues, and contributions.
+
 [Python SDK document is in docs.tfasoft.com](https://docs.amirhossein.info/sdks/python)
 
 If you are using **TFA** as your authentication service in your python applications, you can use our library.
